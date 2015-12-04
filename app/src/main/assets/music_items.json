@@ -1,0 +1,39 @@
+{
+  "store_items": [
+    {
+      "id": "TheWalkingDead",
+      "filename": "01 The Walking Dead Dubstep TV Show Theme Music.m4a",
+      "label": "The Walking Dead",
+      "sms_count": 4,
+      "max_purchase_count": 1
+    },
+    {
+      "id": "AsLongAsYouLove",
+      "filename": "03 As Long As You Love Me Beatbox Parody.m4a",
+      "label": "As Long As You Love Me",
+      "sms_count": 7,
+      "max_purchase_count": 1
+    },
+    {
+      "id": "JamesBond",
+      "filename": "05 James Bond Movie Dubstep Beat Parody.m4a",
+      "label": "James Bond Movie",
+      "sms_count": 15,
+      "max_purchase_count": 1
+    },
+    {
+      "id": "HugeMajestic",
+      "filename": "16 Huge Majestic Orchestra.m4a",
+      "label": "Huge Majestic Orchestra",
+      "sms_count": 15,
+      "max_purchase_count": 1
+    },
+    {
+      "id": "GanstaHipHop",
+      "filename": "22 Gangsta Hip-Hop Blackberry Short Song.m4a",
+      "label": "Gangsta Hip-Hop ",
+      "sms_count": 15,
+      "max_purchase_count": 1
+    }
+  ]
+}

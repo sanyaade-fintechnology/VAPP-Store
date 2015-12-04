@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.vasilitate.entertainmentstore"
+        minSdkVersion 9
+        targetSdkVersion 22
+        versionCode 5
+        versionName "0.5"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            applicationVariants.all { variant ->
+                variant.outputs.each  { output ->
+                    output.outputFile = new File(output.outputFile.parent, output.outputFile.name.replace(".apk","").replace("app", "VappStore") + "-" + defaultConfig.versionName.replace(".", "-") + "(" + defaultConfig.versionCode + ").apk")
+                }
+            }
+        }
+    }
+
+    repositories { // make gradle search the app/aars directory for source sets
+        flatDir {
+            dirs 'aars'
+        }
+    }
+}
+
+dependencies {
+//    compile(name:'vapp', ext:'aar') // add VAPP! SDK as a dependency
+
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.beardedhen:androidbootstrap:1.2.3'
+
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'io.realm:realm-android:0.72.0'
+
+    compile 'com.github.vasilitate:VAPP:v0.4'
+}

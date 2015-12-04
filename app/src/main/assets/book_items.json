@@ -1,0 +1,40 @@
+{
+  "store_items": [
+    {
+      "id": "1984",
+      "filename": "1984.pdf",
+      "label": "1984",
+      "sms_count": 5,
+      "max_purchase_count": 1
+
+    },
+    {
+      "id": "Dracula",
+      "filename": "Dracula.pdf",
+      "label": "Dracula",
+      "sms_count": 20,
+      "max_purchase_count": 1
+    },
+    {
+      "id": "OliverTwist",
+      "filename": "Oliver-Twist.pdf",
+      "label": "Oliver Twist",
+      "sms_count": 10,
+      "max_purchase_count": 1
+    },
+    {
+      "id": "TheGreatGatsby",
+      "filename": "The-Great-Gatsby.pdf",
+      "label": "The Great Gatsby",
+      "sms_count": 15,
+      "max_purchase_count": 1
+    },
+    {
+      "id": "TheJungleBook",
+      "filename": "The-Jungle-Book.pdf",
+      "label": "The Jungle Book",
+      "sms_count": 15,
+      "max_purchase_count": 1
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VAPP! Store</string>
+    <string name="buy_item">Purchase Item</string>
+    <string name="payment_prompt_message">VAPP! will now send %d SMS texts to complete the purchase. Please confirm you wish to proceed.</string>
+</resources>
