@@ -8,3 +8,7 @@
 .idea/
 *.jks
 *.apk
+*.iml
+gradle/
+gradlew
+gradlew.bat

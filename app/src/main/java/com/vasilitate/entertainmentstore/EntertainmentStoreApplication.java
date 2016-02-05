@@ -20,16 +20,10 @@ import java.util.List;
 public class EntertainmentStoreApplication extends Application {
 
     /**
-     * The ID provided by VAPP! that identifies your application
+     * The SDK Key provided by VAPP! that identifies your application
      */
     // FIXME - Please substitue your app's VAPP! Id here.
-    private static final String VAPP_APP_ID = "MyAppId";
-
-    /**
-     * The mobile number range provided for your application by VAPP!
-     */
-    // FIXME - Please substitue your app's phone number range here...
-    private static final VappNumberRange VAPP_NUMBER_RANGE = new VappNumberRange("+447458830000", "+447458830010");
+    private static final String VAPP_SDK_KEY = "A1EE9CB28A54C87C2539";
 
     private static Context context;
 
@@ -60,11 +54,11 @@ public class EntertainmentStoreApplication extends Application {
         try {
             // initialise VAPP! with the products
             Vapp.initialise(this,
-                    VAPP_APP_ID,
                     productList,
-                    VAPP_NUMBER_RANGE,
-                    false,       // Test Mode
-                    true);      // Cancellable Products?
+                    true,       // Test Mode
+                    true, // Cancellable Products?
+                    VAPP_SDK_KEY);
+
         } catch( Exception e ) {
 
             Toast.makeText( this, "Vapp Exception: " + e.getMessage(), Toast.LENGTH_LONG ).show();
