@@ -55,7 +55,7 @@ public class EntertainmentStoreApplication extends Application {
             // initialise VAPP! with the products
             Vapp.initialise(this,
                     productList,
-                    true,       // Test Mode
+                    false,       // Test Mode
                     true, // Cancellable Products?
                     VAPP_SDK_KEY);
 
