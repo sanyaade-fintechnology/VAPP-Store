@@ -24,6 +24,8 @@ public class EntertainmentStoreApplication extends Application {
      */
     // FIXME - Please substitue your app's VAPP! Id here.
     private static final String VAPP_SDK_KEY = "A1EE9CB28A54C87C2539";
+    private static final boolean TEST_MODE = false;       // Test Mode
+    private static final boolean CANCELLABLE_PRODUCTS = true; // Cancellable Products?
 
     private static Context context;
 
@@ -55,8 +57,8 @@ public class EntertainmentStoreApplication extends Application {
             // initialise VAPP! with the products
             Vapp.initialise(this,
                     productList,
-                    false,       // Test Mode
-                    true, // Cancellable Products?
+                    TEST_MODE,
+                    CANCELLABLE_PRODUCTS,
                     VAPP_SDK_KEY);
 
         } catch( Exception e ) {
