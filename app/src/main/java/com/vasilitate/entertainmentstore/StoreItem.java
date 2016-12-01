@@ -59,6 +59,7 @@ public class StoreItem implements Serializable {
      * @return a VappProduct instance from the current StoreItem.
      */
     public VappProduct generateVappProduct() {
-        return new VappProduct(getVappProductId(), getSmsCount(), getMaxPurchaseCount());
+        return new VappProduct.Builder(getVappProductId(), getSmsCount())
+                .setMaxProductCount(getMaxPurchaseCount()).build();
     }
 }

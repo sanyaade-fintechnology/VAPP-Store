@@ -7,7 +7,6 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.vasilitate.vapp.sdk.Vapp;
-import com.vasilitate.vapp.sdk.VappNumberRange;
 import com.vasilitate.vapp.sdk.VappProduct;
 
 import java.io.BufferedReader;
@@ -57,6 +56,7 @@ public class EntertainmentStoreApplication extends Application {
             // initialise VAPP! with the products
             Vapp.initialise(this,
                     productList,
+                    null,
                     TEST_MODE,
                     CANCELLABLE_PRODUCTS,
                     VAPP_SDK_KEY);
